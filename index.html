@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jackson's Drawing Machine</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background-color: #222;
+        color: white;
+      }
+      button {
+        margin: 5px;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      canvas { border: 2px solid #fff; }
+    </style>
   </head>
   <body>
-    <main>
-    </main>
+    <h1>Jackson's Drawing Machine</h1>
+    <p>Use the buttons to make some cool stuff!</p>
+    <button onclick="drawFlower()">Draw Flower</button>
+    <button onclick="drawSmile()">Draw Smile</button>
+    <button onclick="drawBee()">Draw Bee</button>
+    <button onclick="drawRandom()">Draw Random</button>
+    <button onclick="drawLine()">Draw Line</button>
+    <button onclick="clearCanvas()">Clear Screen</button>
+    <button onclick="saveCanvas()">Save as Image</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="sketch.js"></script>
   </body>
 </html>
